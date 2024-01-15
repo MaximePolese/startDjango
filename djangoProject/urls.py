@@ -17,11 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-from djangoProject.views import hello, current_datetime
+from djangoProject.views import hello, current_datetime, hours_ahead
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('hello/', hello),
     path('time/', current_datetime),
+    path('time/plus/<int:hours>/', hours_ahead),
 ]

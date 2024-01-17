@@ -24,6 +24,6 @@ urlpatterns = [
     # path('hello/', hello),
     # path('time/', current_datetime),
     # path('time/plus/<int:hours>/', hours_ahead),
-    path("django_polls/", include("django_polls.urls")),
+    path("polls/", include("django_polls.urls")),
     path("__debug__/", include("debug_toolbar.urls")),
 ]

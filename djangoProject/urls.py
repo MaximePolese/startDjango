@@ -25,4 +25,5 @@ urlpatterns = [
     path('time/', current_datetime),
     path('time/plus/<int:hours>/', hours_ahead),
     path("polls/", include("polls.urls")),
+    path("__debug__/", include("debug_toolbar.urls")),
 ]
